@@ -8,8 +8,11 @@
   </head>
   <body>
     <h1 id="clicks"></h1>
-    <button id="100clicks" onclick="clicked()">100 clicks test</button>
-    <button id="10clicks" onclick="clicked2()">10 clicks test</button>
+    <button id="100clicks" onMouseDown="clicked(100, 10)">
+      100 clicks test
+    </button>
+    <button id="10clicks" onMouseDown="clicked(10, 100)">10 clicks test</button>
+    <button id="reset" onMouseDown="reset()">reset</button>
     <h2 id="clickspersecond">CPS :</h2>
     <script src="app.js"></script>
   </body>
