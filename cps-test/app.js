@@ -2,10 +2,15 @@ let clicksNumber = 0;
 let run = true;
 let alreadyClicked = false;
 let start;
+document.getElementById("reset").style.visibility = "hidden";
 
-function clicked(){
-    if (clicksNumber < 100){
-        document.getElementById("100clicks").innerText = "click";
+function clicked(number, otherNumber){
+    number = number;
+    otherNumber = otherNumber;
+    if (clicksNumber < number){
+        document.getElementById("reset").style.visibility = "visible";
+        document.getElementById(number+"clicks").innerText = "click";
+        document.getElementById(otherNumber+"clicks").style.visibility = "hidden";
         clicksNumber += 1;
         document.getElementById("clicks").innerText = "Clicks : " + clicksNumber;
         if (alreadyClicked == false){
@@ -20,4 +25,7 @@ function clicked(){
         cps = Math.round(cps);
         document.getElementById("clickspersecond").innerText =  cps + " clicks per second.";
     }}
+}
+function reset(){
+    location.reload();
 }
