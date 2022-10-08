@@ -2,15 +2,15 @@ let clicksNumber = 0;
 let run = true;
 let alreadyClicked = false;
 let start;
-document.getElementById("reset").style.visibility = "hidden";
+document.getElementById("reset").style.display="none";
 
 function clicked(number, otherNumber){
     number = number;
     otherNumber = otherNumber;
     if (clicksNumber < number){
-        document.getElementById("reset").style.visibility = "visible";
+        document.getElementById("reset").style.display = "inline";
         document.getElementById(number+"clicks").innerText = "click";
-        document.getElementById(otherNumber+"clicks").style.visibility = "hidden";
+        document.getElementById(otherNumber+"clicks").style.display="none";
         clicksNumber += 1;
         document.getElementById("clicks").innerText = "Clicks : " + clicksNumber;
         if (alreadyClicked == false){
