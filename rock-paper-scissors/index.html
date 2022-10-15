@@ -9,9 +9,16 @@
   </head>
   <body>
     <div class="buttons">
-      <button onClick='game("rock")' id="rock"></button>
-      <button onClick='game("paper")' id="paper"></button>
-      <button onClick='game("scissors")' id="scissors"></button>
+      <button onclick="game('rock', 'paper', 'scissors')" id="rock">
+        Rock
+      </button>
+      <button onclick="game('paper', 'rock', 'scissors')" id="paper">
+        Paper
+      </button>
+      <button onclick="game('scissors', 'paper', 'rock')" id="scissors">
+        Scissors
+      </button>
+      <button onclick="reset()" id="other"></button>
     </div>
     <script src="app.js"></script>
   </body>

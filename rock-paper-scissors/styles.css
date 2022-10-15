@@ -1,1 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+}
+button {
+  text-align: center;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 30px;
+  width: 150px;
+  height: 250px;
+  border: none;
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+button:hover {
+  color: blue;
+}
+#paper {
+  background-image: url(imgs/paper.png);
+}
+#rock {
+  background-image: url(imgs/rock.png);
+}
+#scissors {
+  background-image: url(imgs/scissors.png);
+}
+#other {
+  background-image: none;
+}
