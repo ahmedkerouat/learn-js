@@ -28,7 +28,6 @@ else{
     //win   
     document.getElementById("other").innerText =  "You won.";
 }
-
 }
 function reset(){
     location.reload();
